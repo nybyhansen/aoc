@@ -8,7 +8,7 @@ def extract_calibration_val(string: str) -> int:
 
 
 def sum_calibration_values(calibration_document: list[str]) -> int:
-    return sum(extract_calibration_val(d) for d in calibration_document)
+    return sum(map(extract_calibration_val, calibration_document))
 
 
 def main() -> None:
